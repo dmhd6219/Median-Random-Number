@@ -36,6 +36,48 @@ not handled properly. Make sure you use the proper width of integers in your cal
 number generator: "a c m seed" (2 ≤ <i>a</i>, <i>c</i>, <i>m</i> < 2^{31} , 0 ≤ seed < <i>m</i>).
 Second line contains a single number <N> (1 ≤ N ≤ 109).
 
+Example:
+```
+2 5 19 7
+10
+```
+
 <b>Output format</b>. The output must contain a single number <i>j</i>, which is
 the index of the median of the N generated numbers. That is Y_<i>j</i> must be the
 median value.
+
+Example (for the input example above):
+```
+3
+```
+
+<b>Note</b>
+
+In the sample test,the generated random sequence X is:
+<ul>
+<li>X_0=7</li>
+<li>X_1 = (2X_0 + 5) mod 19 = 0</li>
+<li>X_2 = (2X_1 + 5) mod 10 = 5</li>
+<li>X3 = ⋯ = 15</li>
+<li>X4 = ⋯ = 16</li>
+<li>X5 = ⋯ = 18</li>
+<li>X6 = ⋯ = 3</li>
+<li>X7 = ⋯ = 11</li>
+<li>X8 = ⋯ = 8</li>
+<li>X9 = ⋯ = 2</li>
+<li>X10 = ⋯ = 9</li>
+</ul>
+
+The corresponding values of Y are (note how we discard X_0):
+<ul>
+<li>Y_1 = | 2X_1 / <i>m</i> − 1 | ≈ 1.000000</li>
+<li>Y_2 = | 2X_2 / <i>m</i> − 1 | ≈ 0.473684</li>
+<li>Y_3 = | 2X_3 / <i>m</i> − 1 | ≈ 0.578947</li>
+<li>Y_4 = | 2X_4 / <i>m</i> − 1 | ≈ 0.684211</li>
+<li>Y_5 = | 2X_5 / <i>m</i> − 1 | ≈ 0.894737</li>
+<li>Y_6 = | 2X_6 / <i>m</i> − 1 | ≈ 0.684211</li>
+<li>Y_7 = | 2X_7 / <i>m</i> − 1 | ≈ 0.157895</li>
+<li>Y_8 = | 2X_8 / <i>m</i> − 1 | ≈ 0.157895</li>
+<li>Y_9 = | 2X_9 / <i>m</i> − 1 | ≈ 0.789474</li>
+<li>Y_10 = | 2X_10 / <i>m</i> − 1 | ≈ 0.0526316</li>
+</ul>
