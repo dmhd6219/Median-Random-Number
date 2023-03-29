@@ -34,7 +34,7 @@ not handled properly. Make sure you use the proper width of integers in your cal
 
 <b>Input format</b>. First line of the input specifies parameters for the random
 number generator: "a c m seed" (2 ≤ <i>a</i>, <i>c</i>, <i>m</i> < 2^{31} , 0 ≤ seed < <i>m</i>).
-Second line contains a single number <N> (1 ≤ N ≤ 109).
+Second line contains a single number <N> (1 ≤ N ≤ 10^9).
 
 <b>Output format</b>. The output must contain a single number <i>j</i>, which is
 the index of the median of the N generated numbers. That is Y_<i>j</i> must be the
