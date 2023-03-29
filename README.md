@@ -25,6 +25,7 @@ The random numbers Y_<i>i</i> are generated from X_<i>i</i> as follows:
 <p align="center">
   Y_<i>i</i> = | (2X_<i>i</i> / <i>m</i>) − 1 |
 </p>
+
 <b>Requirement</b>. You must implement Bucket-Sort to solve this exercise.
 
 <b>Warning</b>: although the values X_<i>i</i> are all strictly less than <i>m</i>, the value
