@@ -57,7 +57,7 @@ In the sample test,the generated random sequence X is:
 <ul>
 <li>X_0=7</li>
 <li>X_1 = (2X_0 + 5) mod 19 = 0</li>
-<li>X_2 = (2X_1 + 5) mod 10 = 5</li>
+<li>X_2 = (2X_1 + 5) mod 19 = 5</li>
 <li>X3 = ⋯ = 15</li>
 <li>X4 = ⋯ = 16</li>
 <li>X5 = ⋯ = 18</li>
